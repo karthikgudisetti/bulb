@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head><title>bulb</title>
+        <style>
+            body{
+                background-color: black;
+
+            }
+            div{
+                height: 300px;
+                width: 300px;
+                border-radius:50%; 
+                background-color:aliceblue; 
+                
+                margin-left: 400px; }
+            section{
+                text-align: center;
+                padding-top: 20px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="i">
+            
+        </div>
+        <section>
+            <button onclick="on()">switch on </button>
+            <button onclick="off()">switch off</button>
+        </section>
+        <script>
+            function on(){
+                document.getElementById("i").style.backgroundColor="orange";
+                document.getElementById("i").style.boxShadow="0 0 50px orange"
+            }
+            function off(){
+                document.getElementById("i").style.backgroundColor="white";
+                document.getElementById("i").style.boxShadow="none"
+            }
+        </script>
+
+    </body>
+</html>
